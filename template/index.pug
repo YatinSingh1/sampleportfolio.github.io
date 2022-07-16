@@ -1,0 +1,177 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Portfolio outline
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  link(rel='stylesheet' href='../public/portfolio.css')
+.main-portfolio-container
+  // Navbar area
+  nav.navbar
+    .navbar-brand
+      a(href='portfolio.html')
+        i.fa.fa-fw.fa-user
+        |  Portfolio
+    .navlist-container
+      ul.navlist-ul
+        li
+          a(href='#my_intro') About
+        li
+          a(href='#Experience&Qualification') Education
+        li
+          a(href='#Experience&Qualification') Experience
+        li
+          a(href='#contact_me') Contact
+  // quick intro area
+  section#my_intro.quick-intro
+    .wrapper
+      .left-wrapper
+        p.short-para Hey! This is my portforlio website.
+        .static-txt
+          h1
+            | I&apos;m Enthusiam about
+          ul.dynamic-txts
+            li
+              span Programming
+            li
+              span Web Development
+            li
+              span UI/UX Development
+            li
+              span Business
+        p.short-short-para
+          | Building things is my passion, And I&apos;m very much passionate &apos;bout my passion.
+          br
+          | That&apos;s why I love Programming, Web Development, Software Development I can build things with different conceptions.
+        button.my_resume
+          a(href='#')
+            i.far.fa-file  
+            | &nbsp; Download My Resume
+        button.my_view_resume
+          a(href='#')
+            i.far.fa-file  
+            | &nbsp; View My Resume
+      .right-wrapper
+        img(src='/img.png' alt='vector right image wrapper')
+  // learning setion starts here
+  section.learning-section
+    .things_learned
+      h1.learned_heading
+        | Things I have Learned For Web Development!
+    br
+    .progress_skills
+      p.para_skill HTML
+      .container_skill
+        .skill.html 80%
+      br
+      p.para_skill PHP
+      .container_skill
+        .skill.php 70%
+      br
+      p.para_skill NODE JS
+      .container_skill
+        .skill.node 70%
+      br
+      p.para_skill MONGO DB
+      .container_skill
+        .skill.mongo 80%
+      br
+      p.para_skill CSS/JS
+      .container_skill
+        .skill.css_js 70%
+  // Experience and Qualification section starts here
+  section.experience_qualification_section(id='Experience&Qualification')
+    .experience_container
+      h1.experience_head
+        | Experiences
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2022
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2022)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi!
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2021
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2021)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi facere!
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2020
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2020)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi facere!
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2019
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2019)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi facere!
+    .qualification_container
+      h1.experience_head
+        | Educations
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2013
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2013)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi!
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2016
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2016)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi facere?
+      .exp_holder
+        .year_chart
+          .year
+            span.dot 2018
+        .experience_chart
+          h3.head_exp Lorem Ipsum! (2018)
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti obcaecati, itaque numquam dignissimos eligendi facer!
+  // Contact Section starts here
+  section#contact_me.contact_section
+    .contact_container
+      .contact_head
+        p.contact_paraHead
+          | Interested? Let us talk with each other!
+      .contact_img
+        img(src='/Profile_picture.png' alt='contact img')
+      form(action='/index.html' method='post')
+        .form_section
+          .name_area
+            input#name.form-control(type='text' name='Name' placeholder='Your Name')
+          .email_area
+            input#email.form-control(type='email' name='Email' placeholder='Email')
+          .textarea
+            textarea#message.form-control-text(name='message' rows='5' placeholder='Message')
+          .send_btn
+            button.send_this
+              i.far.fa-paper-plane
+              |  Send
+  // Footer section starts here
+  section.footer_section
+    .footer_container
+      .foot_para1
+        p.paraF1
+          | Copyright &copy; || All Rights Reserved
+      .foot_para2
+        p.paraF2
+          | Designed with Love &hearts; by Goldie/Yatin
+// The End of Development here
+script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js' integrity='sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==' crossorigin='anonymous' referrerpolicy='no-referrer')
